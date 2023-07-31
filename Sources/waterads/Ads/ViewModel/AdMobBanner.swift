@@ -42,7 +42,7 @@ public struct AdMobBanner: View {
     public var body: some View {
         HStack {
             Spacer()
-            AdMobBannerVC(waterads.getAdID(bannerName))
+            AdMobBannerVC(getAdID(bannerName))
             Spacer()
         }
     }

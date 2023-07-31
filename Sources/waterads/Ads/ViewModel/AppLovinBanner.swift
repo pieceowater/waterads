@@ -77,7 +77,7 @@ public struct AppLovinBannerAdView: View {
 //    let width: CGFloat = UIScreen.main.bounds.width
 
     public var body: some View {
-        AppLovinWrapper(waterads.getAdID(bannerName))
+        AppLovinWrapper(getAdID(bannerName))
             .frame(height: height)
             
     }
