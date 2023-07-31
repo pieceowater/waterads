@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "watertads",
+    name: "waterads",
     platforms: [
         .iOS(.v15),
     ],
     products: [
         .library(
-            name: "watertads",
-            targets: ["watertads"]),
+            name: "waterads",
+            targets: ["waterads"]),
     ],
     dependencies: [
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "10.7.0"),
@@ -19,14 +19,14 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "watertads",
+            name: "waterads",
             path: "Sources",
             resources: [
                 .process("Images/Media.xcassets")
             ]
         ),
         .testTarget(
-            name: "watertadsTests",
-            dependencies: ["watertads"]),
+            name: "wateradsTests",
+            dependencies: ["waterads"]),
     ]
 )
