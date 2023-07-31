@@ -10,7 +10,7 @@ import Foundation
 import AppLovinSDK
 import Combine
 
-public class waterads.AppLovinInterstitial: NSObject, MAAdDelegate, ObservableObject {
+public class AppLovinInterstitial: NSObject, MAAdDelegate, ObservableObject {
     @Published public var isAdReady: Bool = false
     private var interstitialAd: MAInterstitialAd?
     private var adUnitID: String
