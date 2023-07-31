@@ -1,17 +1,17 @@
-// swift-tools-version: 5.8
+// swift-tools-version:5.8
 
 
 import PackageDescription
 
 let package = Package(
-    name: "waterads",
+    name: "watertads",
     platforms: [
         .iOS(.v15),
     ],
     products: [
         .library(
-            name: "waterads",
-            targets: ["waterads"]),
+            name: "watertads",
+            targets: ["watertads"]),
     ],
     dependencies: [
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "10.7.0"),
@@ -19,14 +19,14 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "waterads",
+            name: "watertads",
             path: "Sources",
             resources: [
                 .process("Images/Media.xcassets")
             ]
         ),
         .testTarget(
-            name: "wateradsTests",
-            dependencies: ["waterads"]),
+            name: "watertadsTests",
+            dependencies: ["watertads"]),
     ]
 )
