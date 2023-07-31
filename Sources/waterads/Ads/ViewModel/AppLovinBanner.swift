@@ -62,7 +62,7 @@ public extension AppLovinWrapper {
 }
 
 // SwiftUI view to show ad
-public struct AppLovinBannerAdView: View {
+public struct AppLovinBanner: View {
     
     let bannerName: String
     
