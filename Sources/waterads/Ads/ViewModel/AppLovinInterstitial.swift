@@ -6,13 +6,11 @@
 //
 // docs: https://dash.applovin.com/documentation/mediation/ios/ad-formats/interstitials
 
-// AppLovinInterstitial.swift
-
 import Foundation
 import AppLovinSDK
 import Combine
 
-public class AppLovinInterstitial: NSObject, MAAdDelegate, ObservableObject {
+public class waterads.AppLovinInterstitial: NSObject, MAAdDelegate, ObservableObject {
     @Published public var isAdReady: Bool = false
     private var interstitialAd: MAInterstitialAd?
     private var adUnitID: String
